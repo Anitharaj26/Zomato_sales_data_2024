@@ -1,0 +1,40 @@
+create schema zomatosales;
+use zomatosales;
+create table zomato( 
+orderid int,
+Restaurant varchar(100)
+ );
+ use zomatosales;
+ ALTER TABLE zomato ADD COLUMN Cuisine_Type VARCHAR(100);
+  ALTER TABLE zomato ADD COLUMN location VARCHAR(100);
+   ALTER TABLE zomato ADD COLUMN restaurantRating int;
+    ALTER TABLE zomato ADD COLUMN Restaurant_Rating_Count int;
+     ALTER TABLE zomato ADD COLUMN delivery_rating int;
+      ALTER TABLE zomato change Restaturant Restaurant VARCHAR(100);
+select * from zomato; 
+insert into zomato values(2024001,"Yaa_Mohaideen_Briyani","sounth indian","Pallavaram", 4.4, 578,4);
+select * from zomato;
+insert into zomato values(2024002,"Sukkubhai Biriyani","sounth indian","Alandur",4.4,359,4.1);
+ use zomatosales;
+ALTER TABLE zomato change delivery_rating deliveryRating float;
+ALTER TABLE zomato change restaurantRating RestaurantRating float;
+select* from zomato;
+insert into zomato values(2024003,"SS Hyderabad Biryani","sounth indian","Kodambakkam",4.3,	161,4.4);
+select * from zomato;
+insert into zomato values(2024004,"kfc","American fast-food","perambur", 4.3,581,4.4);
+insert into zomato values(2024005,"Tasty Kitchen","fast-food","perambur", 4.5,456,4.3);
+insert into zomato values(2024006,"Bai Veetu Kalyanam","south indian","navallur", 4.8,856,4.3);
+insert into zomato values(2024007,"Dine N Fun","chinese","Annanagr", 3.8,345,3.1);
+insert into zomato values(2024008,"sathyafood","sounth indian","Annanagr", 4.8,695,4.1);
+insert into zomato values(2024009,"sowkarpetfoods","north indian snacks","sowkarpet", 3.8,305,4.1);
+insert into zomato values(2024010,"Savoury Sea Shell","chinese","anna nagar east", 4.4,780,4.9);
+select restaurant, restaurantrating from zomato;
+SELECT orderid, restaurant FROM zomato WHERE restaurantrating >=4.5;
+SELECT orderid, restaurant FROM zomato WHERE location LIKE "perambur%";
+SELECT restaurant, deliveryrating FROM zomato ORDER BY deliveryrating ASC;
+SELECT restaurant, deliveryrating FROM zomato ORDER BY deliveryrating desc;
+SELECT * FROM zomato oRDER BY restaurantrating ASC LIMIT 4;
+SELECT orderid, restaurant, restaurantrating * 10 AS Percentagerating FROM zomato;
+SELECT MAX(restaurantrating) as Maxrestaturantrating FROM zomato;
+USE ZOMATOSALES;
+SELECT * FROM ZOMATO;
