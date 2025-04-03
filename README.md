@@ -31,6 +31,9 @@ Assessing total revenue and customer count trends throughout the year. This incl
 # Contact me!
 If you have any questions, suggestions, or just want to say hello, you can reach out to us at anitharajr26@gmail.com. We would love to hear from you!
 
+![image](https://github.com/user-attachments/assets/2e7cb92f-a9c3-4984-874e-8718a77fc225)
+
+
 
 
 
